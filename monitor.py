@@ -62,7 +62,7 @@ def check_isro(state):
                 "scientist" in item.lower() or "engineer" in item.lower()):
                 send_notification(f"🚨 NEW ISRO SC NOTICE:\n{item}\nURL: {ISRO_URL}")
                 
-        state["isro_seen"] = new_isro_seen
+     state["isro_seen"] = new_isro_seen
     except Exception as e:
         print(f"Error checking ISRO: {e}")
 
